@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Color Picker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 id='h' name='titreh1'>générateur de couleur</h1>
+
+    <form oninput="rgb.value= 'rgb(' + parseInt(red.value)+', '+ parseInt(green.value)+ ', ' + parseInt(blue.value) + ')' " id="formrgb" >
+
+        <label for="red">
+        <input id="red" type="range" name="red" min="0" max="255" valueR="10">Red
+        </label>
+
+        <label for="green">
+        <input id="green" type="range" name="green" min="0" max="255" valueG="0">Green
+        </label>
+
+        <label id='blue1'for="blue">
+        <input id="blue" type="range" name="blue" min="0" max="255" valueB="0">Blue
+        </label>
+ 
+    </form>
+
+    <output form="formrgb" name="rgb" id="outputid" >red</output>
+
+</body>
+</html>

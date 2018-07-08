@@ -1,0 +1,43 @@
+label{
+    display: block;
+}
+
+
+
+output{
+    line-height: 100px;
+}
+
+/*output::before{
+    content: 'background-color : ' attr(name) ' ';
+}*/
+
+:root{
+    --my-var: #000000;
+    --color: red;
+    --valred: attr(valueR);
+}
+#red{
+    --red-bg: attr(valueR);
+}
+#green{
+    --green-bg: attr(valueG); 
+}
+#blue{
+    --blue-bg: attr(name);
+}
+/* :root{
+    --red-bg2: attr(oninput);
+} */
+output{
+    
+}
+output::after{
+/* background-color: var(--blue-bg); */
+content: var(--green-bg);
+} 
+
+body{
+    /* background-color: rgb(--red-bg, --green-bg, --blue-bg); */
+    background: rgb(var(--red-bg),var(--green-bg),var(--blue-bg));
+}
